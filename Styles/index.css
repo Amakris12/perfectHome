@@ -1,79 +1,88 @@
+@font-face {
+  font-family: font1;
+  src: url("../Fonts/DeluxesBold-8MzWg.ttf");
+}
+
+body {
+  background-color: #161616;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='45' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23141414' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  font-family: font1;
+  overflow-x: hidden;
+}
+
+body a {
+  text-decoration: none;
+}
+
 body .container {
   width: 100%;
   height: 100%;
   margin: 0;
-  /* The side navigation menu */
-  /* The navigation menu links */
-  /* When you mouse over the navigation links, change their color */
-  /* Position and style the close button (top right corner) */
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 }
-body .container .sidenav {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #111;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 40px;
-  /* Place content 60px from the top */
-  transition: 0.9s;
-  /* 0.5 second transition effect to slide in the sidenav */
-}
-body .container .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-body .container .sidenav a:hover,
-body .container .offcanvas a:focus {
-  color: #f1f1f1;
-}
-body .container .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 26px;
-  margin-left: 500px;
-}
-body .container #main {
-  transition: margin-left 0.5s;
-  padding: 20px;
-}
-@media screen and (max-height: 450px) {
-  body .container .sidenav {
-    padding-top: 15px;
-  }
-  body .container .sidenav a {
-    font-size: 18px;
-  }
-}
-body .container span {
-  display: inline-block;
-  position: relative;
-  margin-top: 100px !important;
-  margin-left: 100px;
-  color: green;
-}
-body .container img {
-  -webkit-transform: rotate(90deg);
-  margin-top: 100px;
-  width: 10%;
-}
+
 body .container .header {
   text-align: center;
   position: relative;
-  bottom: 5rem;
-}/*# sourceMappingURL=index.css.map */
+  top: 2rem;
+  font-size: 6rem;
+  color: red !important;
+}
+
+body .container .header:hover {
+  font-size: 6.2rem;
+}
+
+body .container .card-Holder {
+  position: relative;
+  top: 0rem;
+  width: 80rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 40rem;
+  border-radius: .75rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .card {
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+  border-radius: .75rem;
+  width: 11vw;
+  height: 30vh;
+  -webkit-box-shadow: #400000 1px 1px 2px 2px;
+          box-shadow: #400000 1px 1px 2px 2px;
+  background-color: black;
+}
+
+body .container .card:hover {
+  -webkit-box-shadow: #400000 2px 2px 3px 3px;
+          box-shadow: #400000 2px 2px 3px 3px;
+}
+
+body .container .img-card {
+  height: 20vh;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: .5rem;
+  border-radius: .75rem;
+}
+
+body .container .card-title {
+  text-align: center;
+  color: white;
+  font-size: 1.7rem;
+  position: relative;
+  bottom: .5rem;
+}
+/*# sourceMappingURL=index.css.map */
